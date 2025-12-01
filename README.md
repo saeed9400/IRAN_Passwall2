@@ -1,4 +1,4 @@
-# 🚀 Easy-IRAN-Passwall
+<p><span style="color:#ff3333"><b># 🚀 Easy-IRAN-Passwall.</b></span></p>
 
 ## ● توضیحات:
 این اسکریپت **PassWall2 را به راحتی و کامل روی OpenWrt نصب می‌کند**  

@@ -37,23 +37,28 @@
 - دسترسی SSH با سطح root
 <br>
 <br>
+
 ---
+
 <br>
-## ● نصب سریع
-#### 1. وارد ترمینال SSH شوید:  
+# ● نصب سریع
+### 1. وارد ترمینال SSH شوید:  
    ```bash
    ssh root@192.168.1.1
    ```
 
-#### 2. سپس دستور زیر را برای دانلود و اجرای اسکریپت اجرا کنید:
+### 2. سپس دستور زیر را برای دانلود و اجرای اسکریپت اجرا کنید:
    ```bash
 rm -f Passwall-IR.sh && wget https://raw.githubusercontent.com/saeed9400/Easy-IRAN-Passwall/main/Passwall-IR.sh && chmod +x Passwall-IR.sh && sh Passwall-IR.sh
    ```
 
 <br>
 <br>
+
 ---
+
 <br>
+
 
 ## ● جزییات نصب برای انجام دستی مراحل:
 
@@ -82,6 +87,12 @@ wget https://raw.githubusercontent.com/saeed9400/Easy-IRAN-Passwall/main/Passwal
    ```bash
 chmod +x Passwall-IR.sh && ./Passwall-IR.sh
    ```
+
+<br>
+<br>
+
+---
+<br>
 
 ## ● نکات مهم:
 

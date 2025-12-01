@@ -1,4 +1,15 @@
-Easy-IRAN-Passwall — English Description
+<img width="1024" height="450" alt="Image" src="https://github.com/user-attachments/assets/ace11d99-b142-4964-b890-71204d9cac41" />
+
+<br>
+
+--------------------------------------------
+<a href="https://github.com/saeed9400/Easy-IRAN-Passwall/blob/main/README_EN.md">► راهنما فارسی ◄ </a>
+<br>
+<br>
+
+--------------------------------------------
+
+<br>
 
 ● Description:
 

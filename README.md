@@ -1,15 +1,15 @@
 Easy Iran PassWall – Install PassWall2 on OpenWrt with full Iran traffic routing, smart filtering, GeoIP database, and automatic setup. Fast install script for all OpenWrt devices.
 <br>
 
-<a href="https://github.com/saeed9400/IRAN_Passwall2/blob/main/README_EN.md">► English Description ◄ </a>
-<br>
-<br>
+
 
 --------------------------------------------
 <img width="1024" height="450" alt="Image" src="https://github.com/user-attachments/assets/ace11d99-b142-4964-b890-71204d9cac41" />
 
 <br>
-
+<a href="https://github.com/saeed9400/IRAN_Passwall2/blob/main/README_EN.md">► English Description ◄ </a>
+<br>
+<br>
 --------------------------------------------
 
 

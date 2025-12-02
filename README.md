@@ -7,7 +7,9 @@
 <img width="1408" height="630" alt="Image" src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694" />
 
 <br>
-<a href="https://github.com/saeed9400/IRAN_Passwall2/blob/main/README_EN.md">► English Description ◄ </a>
+<a href="https://saeed9400.github.io/IRAN_Passwall2/">► Web Page ◄ </a>
+
+
 <br>
 <br>
 --------------------------------------------
@@ -119,7 +121,7 @@ chmod +x Passwall-IR.sh && ./Passwall-IR.sh
 <br>
 
 ---
-
+<a href="https://github.com/saeed9400/IRAN_Passwall2/blob/main/README_EN.md">► English Description ◄ </a>
 
 <br>
 

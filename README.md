@@ -4,7 +4,7 @@
 
 
 --------------------------------------------
-<img width="1408" height="736" alt="Image" src="https://github.com/user-attachments/assets/ab63ef7a-6342-461f-993e-5736104308e6" />
+<img width="1408" height="630" alt="Image" src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694" />
 
 <br>
 <a href="https://github.com/saeed9400/IRAN_Passwall2/blob/main/README_EN.md">► English Description ◄ </a>
@@ -125,7 +125,7 @@ chmod +x Passwall-IR.sh && ./Passwall-IR.sh
 
 
 
-<img width="1408" height="736" alt="Image" src="https://github.com/user-attachments/assets/ab63ef7a-6342-461f-993e-5736104308e6" />
+<img width="1408" height="630" alt="Image" src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694" />
 Easy Iran PassWall – Install PassWall2 on OpenWrt with full Iran traffic routing, smart filtering, GeoIP database, and automatic setup. Fast install script for all OpenWrt devices.
 <br>
 

@@ -1,7 +1,6 @@
 
 <br>
-<a href="https://saeed9400.github.io/IRAN_Passwall2/">► صفحه اینترنتی این پروژه  ◄ </a>
-<ذق>
+# <a href="https://saeed9400.github.io/IRAN_Passwall2/">► صفحه اینترنتی این پروژه  ◄ </a>
 
 
 

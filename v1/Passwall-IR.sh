@@ -335,7 +335,7 @@ echo ""
 log_repo "---------------------------------------------------------------"
 echo ""
 log_info "Download Passwall2 Banner..."
-FILE_URL="https://raw.githubusercontent.com/saeed9400/Easy-IRAN-Passwall/main/status.htm"
+FILE_URL="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/refs/heads/main/data/status_v1.htm"
 DEST_DIR="/usr/lib/lua/luci/view/passwall2/global"
 DEST_FILE="$DEST_DIR/status.htm"
 

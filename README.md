@@ -1,7 +1,8 @@
 <br>
-<br>
+<p align="center">
 # نسخه دوم : در حال آماده سازی می باشد و بعد از تکمیل همینجا منتشر خواهد شد
 <br>
+<hr style="border: 1px solid #ccc; margin: 40px 0;">
 <p align="center">
   <a href="https://saeed9400.github.io/IRAN_Passwall2/">
     <strong style="font-size: 1.6em; color: #0066cc; letter-spacing: 0.8px;">

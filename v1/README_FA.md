@@ -42,6 +42,60 @@
 <br>
 
 ---
+
+<br>
+
+# ● نصب سریع
+### 1. وارد ترمینال SSH شوید:  
+   ```bash
+   ssh root@192.168.1.1
+   ```
+
+### 2. سپس دستور زیر را برای دانلود و اجرای اسکریپت اجرا کنید:
+   ```bash
+rm -f Passwall-IR.sh && wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/Passwall-IR.sh && chmod +x Passwall-IR.sh && sh Passwall-IR.sh
+   ```
+
+<br>
+<br>
+
+---
+
+<br>
+
+
+## ● جزییات نصب برای انجام دستی مراحل:
+
+#### 1. در ویندوز، Command Prompt را باز کرده و دستور پایین را تایپ کنید:
+   ```bash
+   ssh root@192.168.1.1
+   ```
+
+   -- در صورت استفاده از IP متفاوت، آن را جایگزین 192.168.1.1 کنید.
+
+   -- در صورتی که دیوایس شما رمز دارد، آن را تایپ کنید.
+
+   -- هنگام وارد کردن رمز، کاراکترها نمایش داده نمی‌شوند
+
+   -- در صورت درستی فرامین وارد ترمینال SSH خواهید شد و خط فرمان به OpenWrt تغییر خواهد کرد.
+.
+
+#### 2. با این فرمان اسکریپت را دانلود کنید:
+
+   ```bash
+wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/Passwall-IR.sh -O Passwall-IR.sh
+   ```
+
+#### 3. با این فرمان اسکریپت را اجرا کنید:
+
+   ```bash
+chmod +x Passwall-IR.sh && ./Passwall-IR.sh
+   ```
+
+<br>
+<br>
+
+---
 <br>
 
 ## ● نکات مهم:
@@ -100,6 +154,47 @@ Easy Iran PassWall – Install PassWall2 on OpenWrt with full Iran traffic routi
 
 ------------------------------------------------------------------------
 
+● Quick Installation
+
+1. Open the SSH terminal:
+
+    ssh root@192.168.1.1
+
+2. Download and run the script:
+
+   ```bash
+    rm -f Passwall-IR.sh && wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/Passwall-IR.sh && chmod +x Passwall-IR.sh && sh Passwall-IR.sh
+   ```
+
+------------------------------------------------------------------------
+
+● Manual Installation Steps:
+
+1. On Windows, open Command Prompt and type:
+
+   ```bash
+    ssh root@192.168.1.1
+   ```
+
+— If your device uses a different IP, replace 192.168.1.1.
+— If your device requires a password, enter it.
+— Characters will not appear when typing the password.
+— If successful, you will enter the SSH terminal and the prompt will
+switch to OpenWrt.
+
+2. Download the script:
+
+   ```bash
+    wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/Passwall-IR.sh -O Passwall-IR.sh
+   ```
+
+3. Run the script:
+
+   ```bash
+    chmod +x Passwall-IR.sh && ./Passwall-IR.sh
+   ```
+
+------------------------------------------------------------------------
 
 ● Important Notes:
 

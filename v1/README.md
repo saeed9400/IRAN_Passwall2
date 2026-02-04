@@ -1,7 +1,7 @@
 
 <br>
 <a href="https://saeed9400.github.io/IRAN_Passwall2/">► برای رفتن به صفحه اطلاعات این پروژه کلیک کنید ◄ 
-<img width="1408" height="630" alt="Image" src="https://github.com/saeed9400/IRAN_Passwall2/blob/main/v1/img/iran_passwall2.png" /> </a>
+<img width="1408" height="630" alt="Image" src="https://github.com/saeed9400/IRAN_Passwall2/blob/main/v1/img/iran_passwall2_v1.png" /> </a>
 
 <br>
 <br>
@@ -53,7 +53,7 @@
 
 ### 2. سپس دستور زیر را برای دانلود و اجرای اسکریپت اجرا کنید:
    ```bash
-rm -f Passwall-IR.sh && wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/Passwall-IR.sh && chmod +x Passwall-IR.sh && sh Passwall-IR.sh
+rm -f Passwall-IR.sh && wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/refs/heads/main/v1/Passwall-IR.sh && chmod +x Passwall-IR.sh && sh Passwall-IR.sh
    ```
 
 <br>
@@ -83,7 +83,7 @@ rm -f Passwall-IR.sh && wget https://raw.githubusercontent.com/saeed9400/IRAN_Pa
 #### 2. با این فرمان اسکریپت را دانلود کنید:
 
    ```bash
-wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/Passwall-IR.sh -O Passwall-IR.sh
+wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/refs/heads/main/v1/Passwall-IR.sh -O Passwall-IR.sh
    ```
 
 #### 3. با این فرمان اسکریپت را اجرا کنید:
@@ -117,7 +117,7 @@ chmod +x Passwall-IR.sh && ./Passwall-IR.sh
 
 
 
-<img width="1408" height="630" alt="Image" src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694" />
+<img width="1408" height="630" alt="Image" src="https://github.com/saeed9400/IRAN_Passwall2/blob/main/v1/img/iran_passwall2_v1.png" />
 Easy Iran PassWall – Install PassWall2 on OpenWrt with full Iran traffic routing, smart filtering, GeoIP database, and automatic setup. Fast install script for all OpenWrt devices.
 <br>
 
@@ -163,7 +163,7 @@ Easy Iran PassWall – Install PassWall2 on OpenWrt with full Iran traffic routi
 2. Download and run the script:
 
    ```bash
-    rm -f Passwall-IR.sh && wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/Passwall-IR.sh && chmod +x Passwall-IR.sh && sh Passwall-IR.sh
+    rm -f Passwall-IR.sh && wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/refs/heads/main/v1/Passwall-IR.sh && chmod +x Passwall-IR.sh && sh Passwall-IR.sh
    ```
 
 ------------------------------------------------------------------------
@@ -185,7 +185,7 @@ switch to OpenWrt.
 2. Download the script:
 
    ```bash
-    wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/Passwall-IR.sh -O Passwall-IR.sh
+    wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/refs/heads/main/v1/Passwall-IR.sh -O Passwall-IR.sh
    ```
 
 3. Run the script:

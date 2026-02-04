@@ -1,144 +1,161 @@
 <br>
-  <img width="1408" height="630" alt="تصویر پروژه" src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694" />
-</a>
-<br><br>
 
----
-<br>
-<a href="https://saeed9400.github.io/IRAN_Passwall2/">
-  ► برای رفتن به صفحه اطلاعات این پروژه کلیک کنید ◄
-  
-
----
-
-## ● توضیحات
-
-این اسکریپت پکیج **PassWall2** را به راحتی روی فریمور **OpenWrt** نصب می‌کند.
-
-با تفکیک ترافیک، امکان دسترسی به سایت‌های داخلی ایران بدون نیاز به پروکسی فراهم می‌شود.
-
-در صفحه تنظیمات PassWall2، می‌توانید وضعیت لحظه‌ای تفکیک ترافیک، دسترسی به اینترنت و عملکرد کلی را مشاهده کنید.
-
-این اسکریپت همیشه آخرین نسخه منتشرشده را از منابع رسمی دانلود و نصب می‌کند.
-
-### ● نسخه‌ها
-
-این پروژه اکنون دارای دو نسخه است که در پوشه‌های `v1` و `v2` در گیت‌هاب قرار گرفته‌اند:
-
-- **نسخه v1** (پوشه [v1](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v1))  
-  نسخه اولیه با امکانات استاندارد شامل:
-
-  - نصب از منابع رسمی
-  - تفکیک ترافیک داخلی
-  - تنظیم منطقه زمانی تهران و DNS عمومی
-  - قواعد هوشمند مسیریابی
-  - بنر اختصاصی برای کاربران ایرانی
-
-- **نسخه v2** (پوشه [v2](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v2))  
-  نسخه بهبودیافته با تمرکز بر پایداری بیشتر در شرایط مختلف اتصال اینترنت ایران. شامل تغییرات زیر:
-
-  - بررسی عمیق‌تر وضعیت اتصال اینترنت (چند لایه: پینگ، رزولوشن DNS، دسترسی HTTPS)
-  - تست دسترسی به ریپازیتوری‌های رسمی و نصب مستقیم در صورت امکان
-  - در صورت محدودیت دسترسی، تلاش برای دریافت فایل‌ها از گیت‌هاب
-  - در صورت محدودیت شدیدتر، تلاش برای استفاده از ریپازیتوری جایگزین ایرانی
-  - تنها در صورت عدم دسترسی کامل به اینترنت، نصب امکان‌پذیر نخواهد بود
-
-برای انتخاب نسخه مناسب، به پوشه مربوطه مراجعه کنید.
-
----
-
-## ● ویژگی‌ها
-
-- نصب پکیج PassWall2 تنها از منابع رسمی
-- نصب پکیج‌های موردنیاز تفکیک ترافیک از منابع معتبر
-- پایگاه داده کامل GeoIP / Geosite برای ایران
-- تنظیم منطقه زمانی تهران و DNS عمومی
-- ایجاد قواعد هوشمند برای ترافیک داخلی و سرویس‌های جهانی
-- ساخت نودهای Shunt برای مدیریت ترافیک توسط کاربر
-- بنر اختصاصی مناسب کاربران ایرانی PassWall2
-
-## ● پیش‌نیازها
-
-- روتر با فریمور OpenWrt نصب‌شده
-- اتصال اینترنت فعال
-- دسترسی SSH با سطح root
-
----
-
-## ● نکات مهم
-
-- روتر باید به اینترنت متصل باشد.
-- پشتیبان‌گیری از تنظیمات قبلی توصیه می‌شود.
-- استفاده شخصی و غیرتجاری آزاد است.
+<p align="center">
+  <a href="https://saeed9400.github.io/IRAN_Passwall2/">
+    <strong>► برای رفتن به صفحه اطلاعات این پروژه کلیک کنید ◄</strong>
+    <br><br>
+    <img src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694"
+         alt="تصویر پروژه"
+         style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </a>
+</p>
 
 <br>
 
 ---
 
-<a href="https://github.com/saeed9400/IRAN_Passwall2/blob/main/README_EN.md">
-  ► English Description ◄
-</a>
+## توضیحات پروژه
 
-<br>
+این اسکریپت به صورت خودکار پکیج **PassWall2** را روی فریمور **OpenWrt** نصب می‌کند.
 
-<img width="1408" height="630" alt="Project Image" src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694" />
+با استفاده از قابلیت تفکیک ترافیک، امکان دسترسی به سایت‌های داخلی ایران بدون نیاز به پروکسی فراهم می‌شود.
 
-**Easy Iran PassWall** – Install PassWall2 on OpenWrt with full Iran traffic routing, smart filtering, GeoIP database, and automatic setup. Fast install script for all OpenWrt devices.
+در صفحه تنظیمات PassWall2 می‌توانید وضعیت لحظه‌ای تفکیک ترافیک، دسترسی به اینترنت و عملکرد کلی را مشاهده کنید.
+
+اسکریپت همیشه آخرین نسخه منتشرشده را از منابع رسمی دریافت و نصب می‌نماید.
+
+### نسخه‌های موجود
+
+پروژه در حال حاضر دو نسخه اصلی دارد که در پوشه‌های `v1` و `v2` در مخزن گیت‌هاب قرار گرفته‌اند:
+
+- **نسخه v1**  
+  پوشه: [v1](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v1)  
+  نسخه پایه و استاندارد شامل:
+
+  - نصب از منابع رسمی  
+  - تفکیک ترافیک داخلی  
+  - تنظیم منطقه زمانی تهران و DNS عمومی  
+  - قواعد هوشمند مسیریابی  
+  - بنر اختصاصی برای کاربران ایرانی  
+
+- **نسخه v2**  
+  پوشه: [v2](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v2)  
+  نسخه بهبودیافته با تمرکز بر پایداری در شرایط متنوع اینترنت ایران، شامل:
+
+  - بررسی چندلایه وضعیت اتصال (پینگ + رزولوشن DNS + دسترسی HTTPS)  
+  - اولویت نصب مستقیم از ریپازیتوری‌های رسمی  
+  - در صورت محدودیت، تلاش برای دانلود از گیت‌هاب  
+  - در صورت محدودیت شدیدتر، استفاده از ریپازیتوری جایگزین ایرانی  
+  - تنها در صورت قطع کامل اینترنت، نصب امکان‌پذیر نیست  
+
+برای انتخاب نسخه مناسب، به پوشه مورد نظر مراجعه کنید.
+
+---
+
+## ویژگی‌های اصلی
+
+- نصب پکیج PassWall2 صرفاً از منابع رسمی  
+- نصب پکیج‌های لازم برای تفکیک ترافیک از منابع معتبر  
+- پایگاه داده کامل GeoIP و Geosite ویژه ایران  
+- تنظیم خودکار منطقه زمانی تهران و DNS عمومی  
+- ایجاد قواعد هوشمند مسیریابی برای ترافیک داخلی و بین‌المللی  
+- ساخت نودهای Shunt جهت مدیریت دستی ترافیک توسط کاربر  
+- بنر اختصاصی و زیباسازی شده برای کاربران ایرانی PassWall2  
+
+## پیش‌نیازها
+
+- روتر مجهز به فریمور OpenWrt  
+- اتصال اینترنت فعال روی روتر  
+- دسترسی SSH با سطح کاربری root  
+
+## نکات مهم
+
+- روتر حتماً باید به اینترنت متصل باشد.  
+- تهیه نسخه پشتیبان از تنظیمات فعلی قبل از اجرا توصیه می‌شود.  
+- این اسکریپت فقط برای استفاده شخصی و غیرتجاری آزاد است.  
 
 <br>
 
 ---
 
-### ● Description
+<p align="center">
+  <a href="https://github.com/saeed9400/IRAN_Passwall2/blob/main/README_EN.md">
+    ► English Description ◄
+  </a>
+</p>
 
-This script installs the PassWall2 package easily on devices running the OpenWrt firmware.
+<br>
 
-With traffic separation, Iranian domestic websites can be accessed without proxy.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694"
+       alt="Project Image"
+       style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</p>
 
-In the PassWall2 settings page, you can monitor real-time traffic separation status, internet access, and overall performance.
+<p align="center">
+  <strong>Easy Iran PassWall</strong><br>
+  Install PassWall2 on OpenWrt with Iran traffic routing, GeoIP database and automatic setup<br>
+  Fast install script compatible with most OpenWrt devices
+</p>
 
-### ● Versions
+<br>
 
-This project now has two versions, located in the v1 and v2 folders on GitHub:
+---
 
-- **Version v1** (folder [v1](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v1)):  
-  Initial version with standard features:
+### Description
 
-  - Installation from official sources
-  - Domestic traffic separation
-  - Tehran timezone & public DNS setup
-  - Smart routing rules
-  - Custom banner for Iranian users
+This script automatically installs the **PassWall2** package on **OpenWrt** firmware.
 
-- **Version v2** (folder [v2](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v2)):  
-  Improved version with better resilience in varying Iranian internet conditions. Includes:
+Using traffic separation, it enables access to Iranian domestic websites without requiring a proxy.
 
-  - Deeper internet connectivity checks (multi-layer: ping, DNS, HTTPS)
-  - Testing access to official repositories and direct installation when possible
-  - Fallback to GitHub downloads if repository access is limited
-  - Fallback to Iranian mirror repository in more restricted scenarios
-  - Installation only impossible when there is complete lack of internet connectivity
+The PassWall2 settings page shows real-time traffic separation status, internet connectivity and overall performance.
 
-To choose the appropriate version, refer to the corresponding folder.
+The script always fetches and installs the latest official release.
 
-### ● Features
+### Available Versions
 
-- Installs PassWall2 package only from official sources
-- Installs required traffic-separation packages from trusted sources
-- Includes complete GeoIP / Geosite databases for Iran
-- Sets Tehran timezone and public DNS
-- Creates smart routing rules for domestic and global services
-- Builds Shunt nodes for user-controlled traffic management
-- Includes custom banner for Iranian PassWall2 users
+The project currently provides two main versions in folders `v1` and `v2`:
 
-### ● Requirements
+- **Version v1**  
+  Folder: [v1](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v1)  
+  Standard/base version including:
 
-- Router running OpenWrt firmware
-- Active internet connection
-- SSH access with root privileges
+  - Installation from official sources  
+  - Domestic traffic separation  
+  - Tehran timezone & public DNS configuration  
+  - Smart routing rules  
+  - Custom banner for Iranian users  
 
-### ● Important Notes
+- **Version v2**  
+  Folder: [v2](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v2)  
+  Enhanced version with improved resilience under varying Iranian internet conditions, featuring:
 
-- The router must have internet access.
-- Backing up previous configurations is recommended.
-- Free for personal and non-commercial use.
+  - Multi-layer connectivity check (ping + DNS resolution + HTTPS access)  
+  - Priority direct installation from official repositories  
+  - Fallback to GitHub downloads when repository access is restricted  
+  - Fallback to Iranian mirror repository in more severe restrictions  
+  - Installation only impossible when internet is completely unavailable  
+
+Choose the version that best suits your connection conditions.
+
+### Features
+
+- Installs PassWall2 exclusively from official sources  
+- Installs required traffic separation packages from trusted sources  
+- Complete GeoIP / Geosite database for Iran  
+- Automatic Tehran timezone and public DNS setup  
+- Intelligent routing rules for domestic and international traffic  
+- Shunt nodes for manual traffic management  
+- Custom, user-friendly banner for Iranian PassWall2 users  
+
+### Requirements
+
+- Router running OpenWrt firmware  
+- Active internet connection on the router  
+- SSH root access  
+
+### Important Notes
+
+- The router must be connected to the internet.  
+- Backup of current configuration before running is strongly recommended.  
+- For personal, non-commercial use only.  

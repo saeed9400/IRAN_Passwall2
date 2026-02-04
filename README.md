@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://saeed9400.github.io/IRAN_Passwall2/">
     <strong style="font-size: 1.6em; color: #0066cc; letter-spacing: 0.8px;">
-      ► صفحه کامل پروژه – ایران پاس‌وال ۲ ◄
+      ► نسخه وب صفحه – IRAN Passwall2 ◄
     </strong>
     <br><br>
     <img src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694"
@@ -20,11 +20,11 @@
 
 <br>
 
-## درباره پروژه
+## درباره :
 
-**Iran Passwall2** یک راه‌حل مستقل و کاملاً ایران‌محور برای نصب و راه‌اندازی **PassWall2** روی روترهای **OpenWrt** است.
+پروژه **Iran Passwall2** یک راه‌حل مستقل و کاملاً ایران‌محور برای نصب و راه‌اندازی **PassWall2** روی روترهای **OpenWrt** است.
 
-**مزیت اصلی پروژه:**  
+**مزیت اصلی :**  
 شما می‌توانید همزمان از اینترنت بدون فیلتر برای سایت‌های **داخلی ایران** استفاده کنید و پروکسی/VPN را فقط برای ترافیک خارجی فعال نگه دارید.
 
 در صفحه تنظیمات PassWall2 وضعیت تفکیک ترافیک، اتصال اینترنت و عملکرد به‌صورت زنده نمایش داده می‌شود.
@@ -70,12 +70,12 @@
   </table>
 </div>
 
-## امکانات اصلی
+## امکانات :
 
-- نصب PassWall2 فقط از منابع رسمی  
+- نصب PassWall2 از منابع معتبر  
 - تفکیک دقیق ترافیک داخلی ایران از ترافیک خارجی  
 - پایگاه داده کامل GeoIP و Geosite ویژه ایران  
-- تنظیم خودکار منطقه زمانی تهران و DNS مطمئن  
+- تنظیم منطقه زمانی تهران و DNS مطمئن  
 - قواعد مسیریابی هوشمند داخلی ↔ بین‌المللی  
 - پشتیبانی کامل از Shunt nodes برای کنترل دستی  
 - بنر اختصاصی، زیبا و کاربردی برای کاربران ایرانی  
@@ -93,12 +93,6 @@
 ✓ این پروژه فقط برای **استفاده شخصی و غیرتجاری** آزاد است  
 
 <br>
-
-<div align="center" style="margin: 40px 0; padding: 20px; background: #f5f5f5; border-radius: 12px;">
-  <a href="https://github.com/saeed9400/IRAN_Passwall2/blob/main/README_EN.md" style="font-size: 1.4em; color: #0066cc; font-weight: bold; text-decoration: none;">
-    ► Switch to English README ◄
-  </a>
-</div>
 
 <br>
 
@@ -121,7 +115,7 @@
 <br>
 
 <div align="center" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 28px; border-radius: 16px; margin: 28px 0; font-size: 1.2em;">
-  <strong>Automatic PassWall2 Installation • Smart Domestic/International Traffic Separation • Optimized for Iranian Networks</strong>
+  <strong>Automatic PassWall2 Installation • Smart Traffic Separation • Optimized for Iranian Networks</strong>
 </div>
 
 <br>

@@ -194,15 +194,4 @@ The script always installs the **latest official stable release**.
 
 <br>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694"
-       alt="Iran Passwall2 – Traffic Separation & UI Overview"
-       style="max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 12px 32px rgba(0,0,0,0.2); border: 1px solid #e0e0e0;">
-</p>
-
-<p align="center" style="font-size: 1.45em; font-weight: 700; color: #1a3c6d; margin: 28px 0;">
-  Iran Passwall2<br>
-  Smart Installation • Domestic Routing • Reliable in Iranian Networks
-</p>
-
 <br>

@@ -1,9 +1,9 @@
-  # IRAN Passwall2
-  
-<p align="center">
+# IRAN Passwall2
+
+<p dir="rtl" align="center">
   <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/data/IRAN_PassWall2.png" alt="IRAN Passwall2 Web Installation Guide" width="70%">
-<br>  
-نصب‌کننده هوشمند PassWall2 در فریمور OpenWrt و بهینه‌سازی‌شده برای ایران 
+  <br>
+  نصب‌کننده هوشمند PassWall2 در فریمور OpenWrt و بهینه‌سازی‌شده برای ایران
 </p>
 
 ---
@@ -17,8 +17,8 @@
 
 ## 🧩 معرفی پروژه
 
-اسگریپت **IRAN Passwall2** یک راه‌حل مستقل و ایران‌محور برای نصب  
-و راه اندازی **PassWall2** روی روترهای **OpenWrt** است.
+اسکریپت **IRAN Passwall2** یک راه‌حل مستقل و ایران‌محور برای نصب  
+و راه‌اندازی **PassWall2** روی روترهای **OpenWrt** است.
 
 ### 🎯 مزیت اصلی
 - استفاده مستقیم از اینترنت برای **سایت‌ها و سرویس‌های داخلی ایران**
@@ -44,32 +44,26 @@
 </div>
 
 ---
+
 ## 📘 راهنمای نصب نسخه اول
 
-<p align="center">
+<p dir="rtl" align="center">
   <a href="https://saeed9400.github.io/IRAN_Passwall2/v1">
     <strong>► مشاهده راهنمای نصب IRAN Passwall2 (Web Installation Guide) ◄</strong>
     <br><br>
-    <img 
-      src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/img/iran_passwall2_v1.png"
-      alt="IRAN Passwall2 Web Installation Guide"
-      width="50%">
+    <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/img/iran_passwall2_v1.png" alt="IRAN Passwall2 v1 Installation Guide" width="50%">
   </a>
 </p>
 
 ---
 
-
 ## 📘 راهنمای نصب نسخه دوم (اینترنت محدود)
 
-<p align="center">
+<p dir="rtl" align="center">
   <a href="https://saeed9400.github.io/IRAN_Passwall2/v2">
     <strong>► مشاهده راهنمای نصب IRAN Passwall2 (Web Installation Guide) ◄</strong>
     <br><br>
-    <img 
-      src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v2/img/iran_passwall2_v2.png"
-      alt="IRAN Passwall2 Web Installation Guide"
-      width="50%">
+    <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v2/img/iran_passwall2_v2.png" alt="IRAN Passwall2 v2 Installation Guide" width="50%">
   </a>
 </p>
 
@@ -77,14 +71,14 @@
 
 ## ⚙️ امکانات اصلی
 
-- نصب PassWall2 از منابع رسمی و معتبر  
-- تفکیک دقیق ترافیک داخلی ایران و خارجی  
-- پایگاه داده کامل **GeoIP / Geosite ویژه ایران**  
-- تنظیم خودکار منطقه زمانی تهران  
-- تنظیم DNS مطمئن و پایدار  
-- قواعد مسیریابی هوشمند داخلی ↔ بین‌المللی  
-- پشتیبانی کامل از **Shunt Nodes**  
-- بنر اختصاصی برای کاربران ایرانی  
+- نصب PassWall2 از منابع رسمی و معتبر
+- تفکیک دقیق ترافیک داخلی ایران و خارجی
+- پایگاه داده کامل **GeoIP / Geosite ویژه ایران**
+- تنظیم خودکار منطقه زمانی تهران
+- تنظیم DNS مطمئن و پایدار
+- قواعد مسیریابی هوشمند داخلی ↔ بین‌المللی
+- پشتیبانی کامل از **Shunt Nodes**
+- بنر اختصاصی برای کاربران ایرانی
 
 ---
 
@@ -92,32 +86,34 @@
 
 - روتر با فریمور **OpenWrt**  
   (ترجیحاً نسخه `23.05` یا جدیدتر)
-- اتصال اینترنت فعال روی روتر  
-- دسترسی **root** از طریق SSH  
+- اتصال اینترنت فعال روی روتر
+- دسترسی **root** از طریق SSH
 
 ---
 
 ## ⚠️ نکات مهم
 
-- ✓ روتر حتماً باید به اینترنت متصل باشد  
-- ✓ قبل از اجرا **بکاپ کامل** از تنظیمات بگیرید  
-- ✓ این پروژه فقط برای **استفاده شخصی و غیرتجاری** آزاد است  
+- ✓ روتر حتماً باید به اینترنت متصل باشد
+- ✓ قبل از اجرا **بکاپ کامل** از تنظیمات بگیرید
+- ✓ این پروژه فقط برای **استفاده شخصی و غیرتجاری** آزاد است
 
+---
 
 ## 🤝 مشارکت
 
 پیشنهادها، Issueها و Pull Requestها  
 باعث بهبود کیفیت این پروژه خواهند شد.
 
+---
 
-----
+---
 
 # IRAN Passwall2
-  
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/data/IRAN_PassWall2.png" alt="IRAN Passwall2 Web Installation Guide" width="70%">
-<br>  
-Smart & Iran-Optimized PassWall2 Installer for OpenWrt
+  <br>
+  Smart & Iran-Optimized PassWall2 Installer for OpenWrt
 </p>
 
 ---
@@ -146,13 +142,17 @@ The script always installs the **latest official stable release**.
 
 ## 🔍 Version Comparison
 
+<div dir="ltr" align="center">
+
 | Features | [v1 – Classic](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v1) | [v2 – Recommended (2026)](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v2) |
-|----------|----------------|----------------------|
-| Best suited for | Stable internet connections | Restricted / unstable Iranian internet |
-| Installation source | Official repositories | Official + fallback sources |
-| Connectivity check | Basic | Multi-layer (Ping / DNS / HTTPS) |
-| Traffic separation | Standard | Advanced & resilient |
-| Release status | ✅ Stable | 🚧 In development |
+|:---------|:----------------:|:--------------------:|
+| Best suited for | Stable internet | ⚡ Restricted Iranian internet |
+| Installation source | Official repos | Official + smart fallback |
+| Connectivity check | Basic | 🛡️ Multi-layer (Ping/DNS/HTTPS) |
+| Traffic separation | Standard | 🚀 Advanced & resilient |
+| Release status | ✅ Stable | ✨ In development |
+
+</div>
 
 ---
 
@@ -162,10 +162,7 @@ The script always installs the **latest official stable release**.
   <a href="https://saeed9400.github.io/IRAN_Passwall2/v1">
     <strong>► View IRAN Passwall2 Web Installation Guide ◄</strong>
     <br><br>
-    <img 
-      src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/img/iran_passwall2_v1.png"
-      alt="IRAN Passwall2 v1 Installation Guide"
-      width="50%">
+    <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/img/iran_passwall2_v1.png" alt="IRAN Passwall2 v1 Installation Guide" width="50%">
   </a>
 </p>
 
@@ -177,10 +174,7 @@ The script always installs the **latest official stable release**.
   <a href="https://saeed9400.github.io/IRAN_Passwall2/v2">
     <strong>► View IRAN Passwall2 Web Installation Guide ◄</strong>
     <br><br>
-    <img 
-      src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v2/img/iran_passwall2_v2.png"
-      alt="IRAN Passwall2 v2 Installation Guide"
-      width="50%">
+    <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v2/img/iran_passwall2_v2.png" alt="IRAN Passwall2 v2 Installation Guide" width="50%">
   </a>
 </p>
 
@@ -188,14 +182,14 @@ The script always installs the **latest official stable release**.
 
 ## ⚙️ Key Features
 
-- Install PassWall2 exclusively from official and trusted sources  
-- Precise separation of Iranian domestic and international traffic  
-- Complete and up-to-date **GeoIP / Geosite database optimized for Iran**  
-- Automatic Tehran timezone configuration  
-- Reliable and stable DNS configuration  
-- Intelligent routing rules (domestic ↔ international)  
-- Full support for **Shunt Nodes**  
-- Custom banner tailored for Iranian users  
+- Install PassWall2 exclusively from official and trusted sources
+- Precise separation of Iranian domestic and international traffic
+- Complete and up-to-date **GeoIP / Geosite database optimized for Iran**
+- Automatic Tehran timezone configuration
+- Reliable and stable DNS configuration
+- Intelligent routing rules (domestic ↔ international)
+- Full support for **Shunt Nodes**
+- Custom banner tailored for Iranian users
 
 ---
 
@@ -203,16 +197,16 @@ The script always installs the **latest official stable release**.
 
 - Router running **OpenWrt firmware**  
   (Preferably version `23.05` or newer)
-- Active internet connection on the router  
-- **Root access** via SSH  
+- Active internet connection on the router
+- **Root access** via SSH
 
 ---
 
 ## ⚠️ Important Notes
 
-- ✓ The router must be connected to the internet  
-- ✓ Take a **full backup** of current configurations before running  
-- ✓ This project is released for **personal and non-commercial use only**  
+- ✓ The router must be connected to the internet
+- ✓ Take a **full backup** of current configurations before running
+- ✓ This project is released for **personal and non-commercial use only**
 
 ---
 

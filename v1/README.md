@@ -45,6 +45,7 @@
 1. اتصال به روتر:
 ```
     ssh root@192.168.1.1
+````
 
 
 2. دانلود و اجرای اسکریپت:
@@ -53,6 +54,7 @@
     wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/Passwall-IR.sh
     chmod +x Passwall-IR.sh
     sh Passwall-IR.sh
+````
     
 
 ---
@@ -62,11 +64,13 @@
 1. اتصال به روتر:
 ```
     ssh root@192.168.1.1
+````
 
 
 2. دانلود اسکریپت:
 ```
     wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/Passwall-IR.sh
+````
     
 
 3. اجرای اسکریپت:

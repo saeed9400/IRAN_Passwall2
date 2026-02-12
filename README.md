@@ -103,3 +103,113 @@
 
 پیشنهادها، Issueها و Pull Requestها  
 باعث بهبود کیفیت این پروژه خواهند شد.
+
+
+----
+----
+# IRAN Passwall2
+
+**Smart & Iran-Optimized PassWall2 Installer for OpenWrt**
+
+<img src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694" alt="IRAN Passwall2 Web Installation Guide">
+
+---
+
+## 🚧 Project Notice
+
+**Version 2 is currently under development.**  
+It will be published on this page once completed.
+
+---
+
+## 🧩 Project Overview
+
+The **IRAN Passwall2** script is an independent, Iran-focused solution for installing  
+and configuring **PassWall2** on **OpenWrt** routers.
+
+### 🎯 Core Advantage
+
+- Direct internet access for **Iranian domestic websites and services**
+- **VPN / Proxy active only for international traffic**
+- Real-time connection status and traffic separation monitoring within the PassWall2 interface
+
+The script always installs the **latest official stable release**.
+
+---
+
+## 🔍 Version Comparison
+
+| Features | [v1 – Classic](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v1) | [v2 – Recommended (2026)](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v2) |
+|----------|----------------|----------------------|
+| Best suited for | Stable internet connections | Restricted / unstable Iranian internet |
+| Installation source | Official repositories | Official + fallback sources |
+| Connectivity check | Basic | Multi-layer (Ping / DNS / HTTPS) |
+| Traffic separation | Standard | Advanced & resilient |
+| Release status | ✅ Stable | 🚧 In development |
+
+---
+
+## 📘 Version 1 Installation Guide
+
+<p align="center">
+  <a href="https://saeed9400.github.io/IRAN_Passwall2/v1">
+    <strong>► View IRAN Passwall2 Web Installation Guide ◄</strong>
+    <br><br>
+    <img 
+      src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/img/iran_passwall2_v1.png"
+      alt="IRAN Passwall2 v1 Installation Guide"
+      width="50%">
+  </a>
+</p>
+
+---
+
+## 📘 Version 2 Installation Guide (Restricted Internet)
+
+<p align="center">
+  <a href="https://saeed9400.github.io/IRAN_Passwall2/v2">
+    <strong>► View IRAN Passwall2 Web Installation Guide ◄</strong>
+    <br><br>
+    <img 
+      src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v2/img/iran_passwall2_v2.png"
+      alt="IRAN Passwall2 v2 Installation Guide"
+      width="50%">
+  </a>
+</p>
+
+---
+
+## ⚙️ Key Features
+
+- Install PassWall2 exclusively from official and trusted sources  
+- Precise separation of Iranian domestic and international traffic  
+- Complete and up-to-date **GeoIP / Geosite database optimized for Iran**  
+- Automatic Tehran timezone configuration  
+- Reliable and stable DNS configuration  
+- Intelligent routing rules (domestic ↔ international)  
+- Full support for **Shunt Nodes**  
+- Custom banner tailored for Iranian users  
+
+---
+
+## 📦 Requirements
+
+- Router running **OpenWrt firmware**  
+  (Preferably version `23.05` or newer)
+- Active internet connection on the router  
+- **Root access** via SSH  
+
+---
+
+## ⚠️ Important Notes
+
+- ✓ The router must be connected to the internet  
+- ✓ Take a **full backup** of current configurations before running  
+- ✓ This project is released for **personal and non-commercial use only**  
+
+---
+
+## 🤝 Contributing
+
+Suggestions, Issues, and Pull Requests  
+are welcome and help improve the quality of this project.

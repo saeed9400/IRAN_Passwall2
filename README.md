@@ -28,19 +28,14 @@
 
 ## 🔍 مقایسه نسخه‌ها
 
-| ویژگی‌ها | v1 – کلاسیک | v2 – پیشنهادی (۲۰۲۶) |
-|--------|------------|----------------------|
+| ویژگی‌ها | [v1 – کلاسیک](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v1) | [v2 – پیشنهادی (۲۰۲۶)](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v2) |
+|--------|----------------|----------------------|
 | مناسب برای | اینترنت پایدار | اینترنت محدود ایران |
 | منبع نصب | مخازن رسمی | رسمی + فال‌بک |
 | بررسی اتصال | پایه | چندلایه (Ping / DNS / HTTPS) |
 | تفکیک ترافیک | استاندارد | پیشرفته و مقاوم |
 | وضعیت انتشار | ✅ پایدار | 🚧 در حال توسعه |
 
-🔗 **مشاهده نسخه‌ها**  
-- v1 → https://github.com/saeed9400/IRAN_Passwall2/tree/main/v1  
-- v2 → https://github.com/saeed9400/IRAN_Passwall2/tree/main/v2  
-
----
 
 ## 📘 راهنمای نصب نسخه اول ( web page )
 
@@ -50,6 +45,22 @@
     <br><br>
     <img 
       src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/img/iran_passwall2_v1.png"
+      alt="IRAN Passwall2 Web Installation Guide"
+      width="50%">
+  </a>
+</p>
+
+---
+
+
+## 📘 راهنمای نصب نسخه دوم ( web page )
+
+<p align="center">
+  <a href="https://saeed9400.github.io/IRAN_Passwall2/v2">
+    <strong>► مشاهده راهنمای نصب IRAN Passwall2 (Web Installation Guide) ◄</strong>
+    <br><br>
+    <img 
+      src="https://github.com/saeed9400/IRAN_Passwall2/edit/main/v2/img/iran_passwall2_v2.png"
       alt="IRAN Passwall2 Web Installation Guide"
       width="50%">
   </a>

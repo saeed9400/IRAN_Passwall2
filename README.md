@@ -4,9 +4,10 @@
 <br>
 <hr style="border: 1px solid #ccc; margin: 40px 0;">
 <p align="center">
-  <a href="https://saeed9400.github.io/IRAN_Passwall2/">
+  <a href="https://saeed9400.github.io/IRAN_Passwall2/v1">
     <strong style="font-size: 1.6em; color: #0066cc; letter-spacing: 0.8px;">
-      ► نسخه وب صفحه – IRAN Passwall2 ◄
+     ► مشاهده راهنمای نصب IRAN Passwall2 (Web Installation Guide) ◄
+
     </strong>
     <br><br>
     <img src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694"

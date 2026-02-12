@@ -60,7 +60,7 @@
     <strong>► مشاهده راهنمای نصب IRAN Passwall2 (Web Installation Guide) ◄</strong>
     <br><br>
     <img 
-      src="https://github.com/saeed9400/IRAN_Passwall2/edit/main/v2/img/iran_passwall2_v2.png"
+      src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v2/img/iran_passwall2_v2.png"
       alt="IRAN Passwall2 Web Installation Guide"
       width="50%">
   </a>

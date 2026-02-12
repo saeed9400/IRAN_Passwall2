@@ -2,24 +2,13 @@
 
 **Smart & Iran-Optimized PassWall2 Installer for OpenWrt**
 
+<img src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694" alt="IRAN Passwall2 Web Installation Guide">
 ---
 
 ## 🚧 اطلاعیه پروژه
 
 **نسخه دوم در حال آماده‌سازی است**  
 پس از تکمیل، از همین صفحه منتشر خواهد شد.
-
----
-
-## 📘 راهنمای نصب (نسخه وب)
-
-<p align="center">
-  <a href="https://saeed9400.github.io/IRAN_Passwall2/v1">
-    <strong>► مشاهده راهنمای نصب IRAN Passwall2 (Web Installation Guide) ◄</strong><br><br>
-    <img src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694"
-         alt="IRAN Passwall2 Web Installation Guide">
-  </a>
-</p>
 
 ---
 
@@ -52,6 +41,20 @@
 - v2 → https://github.com/saeed9400/IRAN_Passwall2/tree/main/v2  
 
 ---
+
+## 📘 راهنمای نصب نسخه اول ( web page )
+
+<p align="center">
+  <a href="https://saeed9400.github.io/IRAN_Passwall2/v1">
+    <strong>► مشاهده راهنمای نصب IRAN Passwall2 (Web Installation Guide) ◄</strong>
+    <br><br>
+    <img 
+      src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/img/iran_passwall2_v1.png"
+      alt="IRAN Passwall2 Web Installation Guide"
+      width="50%">
+  </a>
+</p>
+
 
 ## ⚙️ امکانات اصلی
 

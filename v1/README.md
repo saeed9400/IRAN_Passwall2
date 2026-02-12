@@ -1,12 +1,12 @@
 <div dir="rtl">
 
 <p align="center">
-  <a href="https://saeed9400.github.io/IRAN_Passwall2/">
+  <a href="https://saeed9400.github.io/IRAN_Passwall2/v1">
     <strong>► برای رفتن به صفحه اطلاعات این پروژه کلیک کنید ◄</strong>
     <br><br>
     <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/img/iran_passwall2_v1.png"
          alt="IRAN Passwall2 Web Installation Guide"
-         width="50%">
+         width="70%">
   </a>
 </p>
 
@@ -43,13 +43,13 @@
 ## ● نصب سریع
 
 1. اتصال به روتر:
-
+```
     ssh root@192.168.1.1
 
 2. دانلود و اجرای اسکریپت:
-
+```
     rm -f Passwall-IR.sh  
-    wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/refs/heads/main/v1/Passwall-IR.sh  
+    wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/Passwall-IR.sh  
     chmod +x Passwall-IR.sh  
     sh Passwall-IR.sh  
 
@@ -58,15 +58,15 @@
 ## ● نصب دستی
 
 1. اتصال به روتر:
-
+```
     ssh root@192.168.1.1
 
 2. دانلود اسکریپت:
-
-    wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/refs/heads/main/v1/Passwall-IR.sh -O Passwall-IR.sh
+```
+    wget https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/Passwall-IR.sh
 
 3. اجرای اسکریپت:
-
+```
     chmod +x Passwall-IR.sh  
     ./Passwall-IR.sh  
 

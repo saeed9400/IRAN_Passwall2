@@ -16,7 +16,6 @@
 <p align="center">
   <a href="https://saeed9400.github.io/IRAN_Passwall2/v1">
     <strong>► مشاهده راهنمای نصب IRAN Passwall2 (Web Installation Guide) ◄</strong><br><br>
-    
     <img src="https://github.com/user-attachments/assets/c92044ae-3565-410d-9a6c-eabf1e2bd694"
          alt="IRAN Passwall2 Web Installation Guide">
   </a>

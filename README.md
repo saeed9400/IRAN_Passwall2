@@ -116,6 +116,7 @@ Smart & Iran-Optimized PassWall2 Installer for OpenWrt
 <br>  
 Smart & Iran-Optimized PassWall2 Installer for OpenWrt
 </p>
+
 ---
 
 ## 🚧 Project Notice

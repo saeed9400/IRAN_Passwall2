@@ -1,9 +1,8 @@
+<p align="center">
 # IRAN Passwall2
-
 **Smart & Iran-Optimized PassWall2 Installer for OpenWrt**
-
 <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/data/IRAN_PassWall2.png" alt="IRAN Passwall2 Web Installation Guide" width="50%">
-
+</p>
 ---
 
 ## 🚧 اطلاعیه پروژه

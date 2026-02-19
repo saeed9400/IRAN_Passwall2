@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="google-site-verification" content="pqR9dWrVE6R9z2jFYhaciJE1NzOSar5ZJboKnsnvR34" />
+  
+  <title>نصب Passwall2 روی OpenWrt – تفکیک ترافیک داخلی و خارجی ایران | IRAN Passwall2</title>
+  <meta name="description" content="آموزش نصب Passwall2 روی OpenWrt با تفکیک ترافیک داخلی ایران از بین‌المللی، GeoIP/Geosite به‌روز، DNS پایدار، مقاومت در اینترنت محدود – راهنمای کامل v1 و v2 برای کاربران ایرانی ۱۴۰۴">
+  <meta name="keywords" content="نصب Passwall2, Passwall2 ایران, تفکیک ترافیک داخلی و خارجی, نصب Passwall2 روی OpenWrt, Passwall2 با تفکیک ترافیک, پسوال 2, نصب پسوال 2, تفکیک ترافیک ایران از بین المللی, OpenWrt Passwall2, آموزش Passwall2, GeoIP ایران, Passwall2 installation OpenWrt Iran, traffic split Iran international">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazir-font@33.003/Vazirmatn-font-face.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Schema.org - SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "IRAN Passwall2",
+    "url": "https://saeed9400.github.io/IRAN_Passwall2/",
+    "description": "نصب هوشمند Passwall2 روی OpenWrt با تفکیک ترافیک داخلی ایران از خارجی، GeoIP/Geosite بهینه برای ایران، تنظیم DNS پایدار و مقاومت در اینترنت محدود – رایگان و آسان برای کاربران ایرانی",
+    "applicationCategory": "NetworkApplication",
+    "operatingSystem": "OpenWrt",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "IRR"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "saeed9400"
+    },
+    "inLanguage": ["fa-IR", "en-US"],
+    "license": "https://github.com/saeed9400/IRAN_Passwall2/blob/main/LICENSE"
+  }
+  </script>
+
+  <!-- Schema.org - FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "چگونه Passwall2 را روی OpenWrt نصب کنیم؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "با استفاده از اسکریپت IRAN Passwall2، آخرین نسخه رسمی Passwall2 را نصب کنید و تفکیک ترافیک داخلی ایران از خارجی را به‌طور خودکار تنظیم کنید. راهنمای گام‌به‌گام در v1 و v2 موجود است."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "تفکیک ترافیک داخلی و خارجی در Passwall2 چگونه کار می‌کند؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "با استفاده از GeoIP/Geosite ویژه ایران، ترافیک سایت‌های داخلی مستقیم و ترافیک خارجی از VPN/Proxy عبور می‌کند. این کار مصرف ترافیک را کاهش می‌دهد و سرعت را افزایش می‌دهد."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "تفاوت v1 و v2 Passwall2 چیست؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "v1 برای اینترنت پایدار مناسب است؛ v2 برای اینترنت محدود ایران با چک اتصال چندلایه و فال‌بک هوشمند بهینه‌سازی شده."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "پیش‌نیازهای نصب Passwall2 روی روتر چیست؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "روتر با OpenWrt 23.05 یا جدیدتر، اتصال اینترنت فعال و دسترسی root از طریق SSH."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #161b22;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-dark: #388bfd;
+      --success: #3fb950;
+      --border: #30363d;
+      --radius: 12px;
+      --version-notice: #f39c12;      /* نارنجی گرم */
+      --guide-title: #c0392b;          /* قرمز تیره مات */
+    }
+
+    body {
+      font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.65;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    .container { max-width: 980px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+
+    header { text-align: center; padding: 3rem 0 2rem; position: relative; }
+
+    .title-main {
+      font-size: 2.8rem;
+      margin: 0.2em 0 0.1em;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .title-subtitle {
+      font-size: 1.7rem;
+      margin: 0.3em 0 1.5rem;
+      color: var(--text);
+      opacity: 0.95;
+    }
+
+    .lang-toggle {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+
+    .lang-toggle:hover { background: var(--accent); color: white; border-color: var(--accent); }
+
+    .markdown-body {
+      background: var(--card);
+      padding: 2.2rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .markdown-body h2, .markdown-body h3 { color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 0.4em; margin-top: 2.2em; }
+
+    table { width: 100%; border-collapse: collapse; margin: 1.8em 0; font-size: 0.97rem; }
+    th, td { border: 1px solid var(--border); padding: 0.9em 1.1em; text-align: center; }
+    th { background: rgba(88, 166, 255, 0.08); font-weight: 600; color: var(--accent); }
+    tr:nth-child(even) { background: rgba(48, 54, 61, 0.3); }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-dark); text-decoration: underline; }
+
+    .center { text-align: center; }
+
+    .version-notice {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--version-notice);
+      background: rgba(243, 156, 18, 0.12);
+      border: 1px solid rgba(243, 156, 18, 0.3);
+      padding: 1.2rem;
+      border-radius: var(--radius);
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .guide-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    .guide-card h3 {
+      color: var(--guide-title);
+      font-size: 1.45rem;
+      margin: 0 0 1rem;
+    }
+
+    .guide-card img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1rem auto 1.5rem;
+      display: block;
+    }
+
+    .guide-link {
+      display: inline-block;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 0.6rem 1.4rem;
+      border: 2px solid var(--accent);
+      border-radius: 8px;
+      transition: all 0.25s;
+    }
+
+    .guide-link:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    .thanks {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 4rem 0 2rem;
+      color: var(--success);
+      padding: 1.5rem;
+      background: rgba(63, 185, 80, 0.08);
+      border-radius: var(--radius);
+      border: 1px solid rgba(63, 185, 80, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 1.5rem 1rem; }
+      .title-main { font-size: 2.3rem; }
+      .title-subtitle { font-size: 1.4rem; }
+      .guide-card img { max-width: 75%; }
+      .guide-link { font-size: 1.15rem; padding: 0.5rem 1rem; }
+    }
+  </style>
+</head>
+<body data-lang="fa" data-theme="dark">
+
+  <div class="container">
+
+    <header>
+      <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/data/IRAN_PassWall2.png" alt="IRAN Passwall2 – نصب Passwall2 روی OpenWrt" width="60%">
+
+      <div class="title-main" data-fa="IRAN Passwall2" data-en="IRAN Passwall2">
+        IRAN Passwall2
+      </div>
+
+      <div class="title-subtitle" data-fa="نصب هوشمند پسوال ۲ با تفکیک ترافیک ایران" data-en="Smart Passwall2 Installer with Iran Traffic Split">
+        نصب هوشمند پسوال ۲ با تفکیک ترافیک ایران
+      </div>
+
+      <div class="lang-toggle" id="langToggle">
+        <i class="fa-solid fa-language"></i> EN / FA
+      </div>
+    </header>
+
+    <div class="markdown-body">
+
+      <div class="version-notice" data-fa="نسخه ۲ در حال آماده‌سازی – به‌زودی با ویژگی‌های جدید برای اینترنت محدود ایران" data-en="Version 2 Under Preparation – Soon with New Features for Restricted Iran Internet">
+        نسخه ۲ در حال آماده‌سازی – به‌زودی با ویژگی‌های جدید برای اینترنت محدود ایران
+      </div>
+
+      <h2 data-fa="چرا IRAN Passwall2 را انتخاب کنیم؟" data-en="Why Choose IRAN Passwall2?">چرا IRAN Passwall2 را انتخاب کنیم؟</h2>
+      <p data-fa="این پروژه اسکریپت هوشمندی برای نصب Passwall2 روی OpenWrt است که مخصوص کاربران ایرانی طراحی شده. با استفاده از آن می‌توانید ترافیک داخلی ایران را مستقیم و خارجی را از VPN عبور دهید و از کاهش سرعت و مصرف ترافیک جلوگیری کنید." data-en="This project is a smart script for installing Passwall2 on OpenWrt, designed for Iranian users. It routes domestic Iran traffic directly and international through VPN to prevent speed loss and traffic waste.">
+        این پروژه اسکریپت هوشمندی برای نصب Passwall2 روی OpenWrt است که مخصوص کاربران ایرانی طراحی شده. با استفاده از آن می‌توانید ترافیک داخلی ایران را مستقیم و خارجی را از VPN عبور دهید و از کاهش سرعت و مصرف ترافیک جلوگیری کنید.
+      </p>
+
+      <h3 data-fa="مزایای کلیدی نصب Passwall2 با تفکیک ترافیک" data-en="Key Benefits of Passwall2 with Traffic Split">مزایای کلیدی نصب Passwall2 با تفکیک ترافیک</h3>
+      <ul>
+        <li data-fa="تفکیک دقیق ترافیک داخلی ایران و خارجی با GeoIP/Geosite به‌روز" data-en="Precise split of Iran domestic and international traffic with updated GeoIP/Geosite">تفکیک دقیق ترافیک داخلی ایران و خارجی با GeoIP/Geosite به‌روز</li>
+        <li data-fa="نصب آسان آخرین نسخه رسمی Passwall2 بدون پیچیدگی" data-en="Easy install of latest official Passwall2 without complexity">نصب آسان آخرین نسخه رسمی Passwall2 بدون پیچیدگی</li>
+        <li data-fa="تنظیم خودکار DNS پایدار و منطقه زمانی تهران" data-en="Automatic stable DNS and Tehran timezone setup">تنظیم خودکار DNS پایدار و منطقه زمانی تهران</li>
+        <li data-fa="پشتیبانی از Shunt Nodes برای روتینگ هوشمند" data-en="Support for Shunt Nodes for smart routing">پشتیبانی از Shunt Nodes برای روتینگ هوشمند</li>
+        <li data-fa="مقاومت بالا در اینترنت محدود ایران (v2)" data-en="High resilience in restricted Iran internet (v2)">مقاومت بالا در اینترنت محدود ایران (v2)</li>
+      </ul>
+
+      <h2 data-fa="مقایسه نسخه‌های v1 و v2 Passwall2" data-en="Comparison of v1 and v2 Passwall2">مقایسه نسخه‌های v1 و v2 Passwall2</h2>
+      <table>
+        <thead>
+          <tr>
+            <th data-fa="ویژگی" data-en="Feature">ویژگی</th>
+            <th data-fa="v1 – کلاسیک" data-en="v1 – Classic">v1 – کلاسیک</th>
+            <th data-fa="v2 – پیشنهادی (۱۴۰۴)" data-en="v2 – Recommended (2026)">v2 – پیشنهادی (۱۴۰۴)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td data-fa="مناسب برای" data-en="Best for">مناسب برای</td><td data-fa="اینترنت پایدار" data-en="Stable internet">اینترنت پایدار</td><td data-fa="اینترنت محدود ایران" data-en="Restricted Iran internet">اینترنت محدود ایران</td></tr>
+          <tr><td data-fa="منبع نصب" data-en="Install source">منبع نصب</td><td data-fa="مخازن رسمی" data-en="Official repos">مخازن رسمی</td><td data-fa="رسمی + فال‌بک هوشمند" data-en="Official + smart fallback">رسمی + فال‌بک هوشمند</td></tr>
+          <tr><td data-fa="بررسی اتصال" data-en="Connectivity check">بررسی اتصال</td><td data-fa="پایه" data-en="Basic">پایه</td><td data-fa="چندلایه (Ping/DNS/HTTPS)" data-en="Multi-layer (Ping/DNS/HTTPS)">چندلایه (Ping/DNS/HTTPS)</td></tr>
+          <tr><td data-fa="تفکیک ترافیک داخلی/خارجی" data-en="Traffic split">تفکیک ترافیک داخلی/خارجی</td><td data-fa="استاندارد" data-en="Standard">استاندارد</td><td data-fa="پیشرفته و مقاوم" data-en="Advanced & resilient">پیشرفته و مقاوم</td></tr>
+          <tr><td data-fa="وضعیت انتشار" data-en="Release status">وضعیت انتشار</td><td data-fa="پایدار" data-en="Stable">پایدار</td><td data-fa="در حال توسعه" data-en="In development">در حال توسعه</td></tr>
+        </tbody>
+      </table>
+
+      <h2 data-fa="آموزش نصب Passwall2 روی OpenWrt" data-en="Passwall2 Installation Guide on OpenWrt">آموزش نصب Passwall2 روی OpenWrt</h2>
+      <p data-fa="برای نصب Passwall2 با تفکیک ترافیک ایران، از راهنماهای وب زیر استفاده کنید. اسکریپت هوشمند آخرین نسخه را نصب کرده و تنظیمات را به‌طور خودکار اعمال می‌کند." data-en="Use the web guides below to install Passwall2 with Iran traffic split. The smart script installs the latest version and applies settings automatically.">
+        برای نصب Passwall2 با تفکیک ترافیک ایران، از راهنماهای وب زیر استفاده کنید. اسکریپت هوشمند آخرین نسخه را نصب کرده و تنظیمات را به‌طور خودکار اعمال می‌کند.
+      </p>
+
+      <div class="guide-card">
+        <h3 data-fa="نسخه ۱ (کلاسیک – برای اینترنت پایدار)" data-en="Version 1 (Classic – For Stable Internet)">نسخه ۱ (کلاسیک – برای اینترنت پایدار)</h3>
+        <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v1/img/iran_passwall2_v1.png" alt="راهنمای نصب Passwall2 v1" loading="lazy">
+        <a href="https://saeed9400.github.io/IRAN_Passwall2/v1" target="_blank" class="guide-link" data-fa="مشاهده راهنمای نصب Passwall2 v1" data-en="View Passwall2 v1 Installation Guide">
+          مشاهده راهنمای نصب Passwall2 v1
+        </a>
+      </div>
+
+      <div class="guide-card">
+        <h3 data-fa="نسخه ۲ (پیشنهادی – برای اینترنت محدود ایران)" data-en="Version 2 (Recommended – For Restricted Iran Internet)">نسخه ۲ (پیشنهادی – برای اینترنت محدود ایران)</h3>
+        <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/v2/img/iran_passwall2_v2.png" alt="راهنمای نصب Passwall2 v2" loading="lazy">
+        <a href="https://saeed9400.github.io/IRAN_Passwall2/v2" target="_blank" class="guide-link" data-fa="مشاهده راهنمای نصب Passwall2 v2" data-en="View Passwall2 v2 Installation Guide">
+          مشاهده راهنمای نصب Passwall2 v2
+        </a>
+      </div>
+
+      <h2 data-fa="چگونه تفکیک ترافیک داخلی و خارجی در Passwall2 تنظیم کنیم؟" data-en="How to Set Up Domestic/International Traffic Split in Passwall2?">چگونه تفکیک ترافیک داخلی و خارجی در Passwall2 تنظیم کنیم؟</h2>
+      <p data-fa="با استفاده از GeoIP و Geosite ویژه ایران، ترافیک سایت‌های داخلی (مانند بانک‌ها، اپ‌ها و سرویس‌های ایرانی) مستقیم و بدون VPN عبور می‌کند. این کار سرعت را حفظ کرده و مصرف ترافیک VPN را کاهش می‌دهد. در v2، چک اتصال چندلایه (Ping/DNS/HTTPS) برای مقاومت بیشتر اضافه شده." data-en="Using Iran-specific GeoIP and Geosite, domestic traffic (banks, apps, Iranian services) goes direct without VPN. This maintains speed and reduces VPN usage. v2 adds multi-layer connectivity checks (Ping/DNS/HTTPS) for better resilience.">
+        با استفاده از GeoIP و Geosite ویژه ایران، ترافیک سایت‌های داخلی (مانند بانک‌ها، اپ‌ها و سرویس‌های ایرانی) مستقیم و بدون VPN عبور می‌کند. این کار سرعت را حفظ کرده و مصرف ترافیک VPN را کاهش می‌دهد. در v2، چک اتصال چندلایه (Ping/DNS/HTTPS) برای مقاومت بیشتر اضافه شده.
+      </p>
+
+      <h2 data-fa="پیش‌نیازهای نصب Passwall2" data-en="Passwall2 Installation Requirements">پیش‌نیازهای نصب Passwall2</h2>
+      <ul>
+        <li data-fa="روتر با فریمور OpenWrt 23.05 یا جدیدتر" data-en="OpenWrt router 23.05 or newer">روتر با فریمور OpenWrt 23.05 یا جدیدتر</li>
+        <li data-fa="اتصال اینترنت فعال روی روتر" data-en="Active internet connection on router">اتصال اینترنت فعال روی روتر</li>
+        <li data-fa="دسترسی root از طریق SSH" data-en="Root access via SSH">دسترسی root از طریق SSH</li>
+        <li data-fa="بکاپ کامل از تنظیمات قبل از نصب" data-en="Full backup before installation">بکاپ کامل از تنظیمات قبل از نصب</li>
+      </ul>
+
+      <h2 data-fa="سؤالات متداول (FAQ) درباره نصب و تفکیک ترافیک Passwall2" data-en="FAQ on Passwall2 Installation and Traffic Split">سؤالات متداول (FAQ) درباره نصب و تفکیک ترافیک Passwall2</h2>
+      <dl class="faq">
+        <dt data-fa="نصب Passwall2 چقدر زمان می‌برد؟" data-en="How long does Passwall2 installation take?">نصب Passwall2 چقدر زمان می‌برد؟</dt>
+        <dd data-fa="با اسکریپت هوشمند، کمتر از ۱۰ دقیقه – بسته به سرعت اینترنت روتر." data-en="With the smart script, less than 10 minutes – depending on router internet speed.">با اسکریپت هوشمند، کمتر از ۱۰ دقیقه – بسته به سرعت اینترنت روتر.</dd>
+
+        <dt data-fa="آیا Passwall2 با روترهای گوگل (Google WiFi) سازگار است؟" data-en="Is Passwall2 compatible with Google WiFi routers?">آیا Passwall2 با روترهای گوگل (Google WiFi) سازگار است؟</dt>
+        <dd data-fa="بله، روی OpenWrt نصب‌شده روی Google WiFi کار می‌کند و تفکیک ترافیک را پشتیبانی می‌کند." data-en="Yes, works on OpenWrt installed on Google WiFi with traffic split support.">بله، روی OpenWrt نصب‌شده روی Google WiFi کار می‌کند و تفکیک ترافیک را پشتیبانی می‌کند.</dd>
+
+        <dt data-fa="چگونه GeoIP ایران را به‌روزرسانی کنیم؟" data-en="How to update Iran GeoIP?">چگونه GeoIP ایران را به‌روزرسانی کنیم؟</dt>
+        <dd data-fa="اسکریپت به‌طور خودکار آخرین نسخه GeoIP/Geosite ایران را دانلود و اعمال می‌کند." data-en="The script automatically downloads and applies the latest Iran GeoIP/Geosite.">اسکریپت به‌طور خودکار آخرین نسخه GeoIP/Geosite ایران را دانلود و اعمال می‌کند.</dd>
+
+        <dt data-fa="اگر اینترنت قطع شد چه کنیم؟" data-en="What if internet cuts off?">اگر اینترنت قطع شد چه کنیم؟</dt>
+        <dd data-fa="در v2، فال‌بک هوشمند و چک چندلایه اتصال را امتحان کنید. همچنین بکاپ بگیرید." data-en="Try v2's smart fallback and multi-layer checks. Always backup first.">در v2، فال‌بک هوشمند و چک چندلایه اتصال را امتحان کنید. همچنین بکاپ بگیرید.</dd>
+      </dl>
+
+      <div class="center thanks" data-fa="با عشق و به عشق ایران – برای اینترنت بهتر و آزادتر ❤️❤️" data-en="With love, for a better and freer internet in Iran ❤️❤️">
+        با عشق و به عشق ایران – برای اینترنت بهتر و آزادتر ❤️❤️
+      </div>
+
+      <div class="center" style="margin-top: 2rem;">
+        <a href="https://github.com/saeed9400/IRAN_Passwall2" target="_blank" style="font-size: 1.2rem; font-weight: bold;">
+          <i class="fab fa-github"></i> مشاهده پروژه در GitHub
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    const langToggle = document.getElementById('langToggle');
+    const html = document.documentElement;
+
+    function updateLanguage() {
+      const current = html.getAttribute('data-lang');
+      const next = current === 'fa' ? 'en' : 'fa';
+      html.setAttribute('data-lang', next);
+      html.setAttribute('dir', next === 'fa' ? 'rtl' : 'ltr');
+
+      document.querySelectorAll('[data-fa][data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${next}`);
+      });
+
+      langToggle.innerHTML = next === 'fa' 
+        ? '<i class="fa-solid fa-language"></i> EN / FA'
+        : '<i class="fa-solid fa-language"></i> FA / EN';
+    }
+
+    langToggle.addEventListener('click', updateLanguage);
+  </script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-# IRAN Passwall2
+# ایران پسوال ۲
 
 <p dir="rtl" align="center">
   <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/data/IRAN_PassWall2.png" alt="IRAN Passwall2 Web Installation Guide" width="70%">

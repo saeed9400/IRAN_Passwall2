@@ -4,14 +4,15 @@
   <img src="https://raw.githubusercontent.com/saeed9400/IRAN_Passwall2/main/data/IRAN_PassWall2.png" alt="IRAN Passwall2 Web Installation Guide" width="70%">
   <br>
   نصب‌کننده هوشمند PassWall2 در فریمور OpenWrt و بهینه‌سازی‌شده برای ایران
-
+  </p>
+  
 ---
-  <br/><br/>
+<p align="center">
+
 
    🔗 → [**بررسی و شروع نصب** ](https://saeed9400.github.io/IRAN_Passwall2/)
 
-  <br/><br/>
-  </p>
+</p>
 ---
 
 ## 🚧 اطلاعیه پروژه

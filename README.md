@@ -149,7 +149,7 @@ The script always installs the **latest official stable release**.
 
 <div dir="ltr" align="center">
 
-| Features | [v1 – Classic](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v1) | [v2 – Recommended (2026)](https://github.com/saeed9400/IRAN_Passwall2/tree/main/v2) |
+| Features | [v1 – Classic] | [v2 – Recommended] |
 |:---------|:----------------:|:--------------------:|
 | Best suited for | Stable internet | ⚡ Restricted Iranian internet |
 | Installation source | Official repos | Official + smart fallback |
